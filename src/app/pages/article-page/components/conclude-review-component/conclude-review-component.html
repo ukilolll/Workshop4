@@ -1,0 +1,99 @@
+<div class="max-w-md space-y-3 mb-10">
+  <h3 class="text-lg font-semibold">Customer Reviews</h3>
+
+  <div class="flex items-center gap-2 text-sm text-gray-600">
+    <p-rating [ngModel]="averageRating" [readonly]="true"></p-rating>
+    <span>Based on {{ totalReviews }} reviews</span>
+  </div>
+
+  <div class="flex items-center gap-2">
+    <span class="w-3 text-sm">5</span>
+    <p-rating [ngModel]="1" [readonly]="true" [stars]="1" />
+    <div class="flex-1">
+      <p-progressbar
+        [value]="fiveStarPercent"
+        [showValue]="false"
+        styleClass="h-2">
+            <ng-template #content let-value>
+                <span>{{ fiveStarPercent }}%</span>
+            </ng-template>
+      </p-progressbar>
+    </div>
+    <span class="w-10 text-right text-sm text-gray-500">
+      {{ fiveStarPercent }}%
+    </span>
+  </div>
+
+  <div class="flex items-center gap-2">
+    <span class="w-3 text-sm">4</span>
+    <p-rating [ngModel]="1" [readonly]="true" [stars]="1" />
+    <div class="flex-1">
+      <p-progressbar
+        [value]="fourStarPercent"
+        [showValue]="false"
+        styleClass="h-2">
+            <ng-template #content let-value>
+                <span>{{ fourStarPercent }}%</span>
+            </ng-template>
+      </p-progressbar>
+    </div>
+    <span class="w-10 text-right text-sm text-gray-500">
+      {{ fourStarPercent }}%
+    </span>
+  </div>
+
+  <div class="flex items-center gap-2">
+    <span class="w-3 text-sm">3</span>
+    <p-rating [ngModel]="1" [readonly]="true" [stars]="1" />
+    <div class="flex-1">
+      <p-progressbar
+        [value]="threeStarPercent"
+        [showValue]="false"
+        styleClass="h-2">
+            <ng-template #content let-value>
+                <span>{{ threeStarPercent }}%</span>
+            </ng-template>
+      </p-progressbar>
+    </div>
+    <span class="w-10 text-right text-sm text-gray-500">
+      {{ threeStarPercent }}%
+    </span>
+  </div>
+
+  <div class="flex items-center gap-2">
+    <span class="w-3 text-sm">2</span>
+    <p-rating [ngModel]="1" [readonly]="true" [stars]="1" />
+    <div class="flex-1">
+      <p-progressbar
+        [value]="twoStarPercent"
+        [showValue]="false"
+        styleClass="h-2">
+            <ng-template #content let-value>
+                <span>{{ twoStarPercent }}%</span>
+            </ng-template>
+      </p-progressbar>
+    </div>
+    <span class="w-10 text-right text-sm text-gray-500">
+      {{ twoStarPercent }}%
+    </span>
+  </div>
+
+  <div class="flex items-center gap-2">
+    <span class="w-3 text-sm">1</span>
+    <p-rating [ngModel]="1" [readonly]="true" [stars]="1" />
+    <div class="flex-1">
+      <p-progressbar
+        [value]="oneStarPercent"
+        [showValue]="false"
+        styleClass="h-2">
+            <ng-template #content let-value>
+                <span>{{ oneStarPercent }}%</span>
+            </ng-template>
+      </p-progressbar>
+    </div>
+    <span class="w-10 text-right text-sm text-gray-500">
+      {{ oneStarPercent }}%
+    </span>
+  </div>
+</div>
+
