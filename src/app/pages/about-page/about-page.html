@@ -1,2 +1,72 @@
-<p>about-page works! 1234</p>
-<app-segmented-nav-component/>
+<div class="min-h-screen bg-white px-6">
+
+  <div class="flex justify-center pt-10">
+    <app-segmented-nav-component />
+  </div>
+
+  <div class="flex justify-center mt-20">
+    <div class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+      <div>
+        <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+            Uki ,Peerawit Avirutshewin
+        </h1>
+        <p class="mt-6 text-gray-600 leading-relaxed">
+        Hello world 
+        I’m interested in backend developer and 
+        devops engineer.
+        with a strong desire to work on real-world, production-level projects.
+        You can find other projects that are not listed on 
+        my resume in my github.
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center lg:items-start">
+        <div class="w-64 h-80 rounded-2xl overflow-hidden shadow-lg rotate-2 bg-black">
+          <img
+            src="/images/me.jpg"
+            alt="Profile"
+            class="w-full h-full object-cover grayscale"
+          />
+        </div>
+
+        <div class="mt-8 space-y-3 text-gray-700 text-sm">
+          <a href="https://www.instagram.com/uki_p11/" class="flex items-center gap-2 hover:text-black">📷 uki_p11</a>
+          <a href="https://github.com/ukilolll" class="flex items-center gap-2 hover:text-black">🐙 ukilolll</a>
+          <a class="flex items-center gap-2 hover:text-black pt-2">✉️ ukilkillme@gmail.com</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="flex justify-center mt-10">
+    <div
+        class="relative w-1/2 h-[500px] rounded-xl overflow-hidden
+            shadow-lg border bg-gray-100">
+
+        <!-- CONTROL BAR -->
+    <div
+        class="flex items-center justify-between
+            px-3 py-2
+            bg-white border-b">
+
+        <span class="text-sm font-medium text-gray-700">
+        My Map
+        </span>
+
+        <div class="flex gap-2">
+        <p-button  label="My country" size="small" severity="secondary" (click)="showContry()"/>
+        <p-button label="My university" size="small" severity="secondary" (click)="showUniversity()"/>
+        <p-button  label="My high school" size="small" severity="secondary" (click)="showSchool()"/>
+        </div>
+    </div>
+
+    <div
+        #aboutMeMapView
+        class="w-full h-full">
+    </div>
+
+  </div>
+</div>
+</div>
