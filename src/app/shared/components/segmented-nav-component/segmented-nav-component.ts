@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
 export class SegmentedNavComponent {
 
   navItems: SegmentedNavItem[] = [
-    { label: 'About', href: '/about' },
+    { label: 'About', href: '/' },
     { label: 'Articles', href: '/article' },
     { label: 'Projects', href: '/project' },
     { label: 'Speaking', href: '/speaking' },
